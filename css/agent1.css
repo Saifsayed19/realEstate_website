@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+    background: url(../assets/bgimg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.back i {
+    color: white;
+    padding: 30px;
+    font-size: 35px;
+    transition: scale 0.2ease;
+}
+
+.back i:hover {
+    scale: 1.2;
+}
+
+.back i:active {
+    scale: 0.8;
+}
+
+/* Content Section  */
+
+.img img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box {
+    width: 500px;
+    height: 770px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 60px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 0;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+
+.box h3 {
+    font-size: 35px;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.box p {
+    font-size: 25px;
+    color: #fff;
+    padding: 10px;
+}
+
+/* .box button:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+} */
+
+.icon {
+    margin-top: 20px;
+}
+
+.icon i {
+    padding: 20px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.icon i:hover {
+    background-color: #3c5bda;
+}
+
+/* Responsive */
+
+@media(max-width: 767px) {
+    .box p {
+        font-size: 20px;
+        color: #fff;
+        padding: 10px;
+
+    }
+    .back i {
+        color: white;
+        padding: 30px;
+        font-size: 30px;
+        transition: scale 0.2ease;
+    }
+    
+    .back i:hover {
+        scale: 1.2;
+    }
+    
+    .back i:active {
+        scale: 0.8;
+    }
+}
+
+@media(max-width: 374px) {
+    .box {
+        height: 670px;
+    }
+    .box p {
+        font-size: 15px;
+        color: #fff;
+        padding: 10px;
+
+    }
+    .icon i{
+        font-size:15px ;
+    }
+    .icon i:hover {
+        background-color: #3c5bda;
+    }.back i {
+        color: white;
+        padding: 30px;
+        font-size: 20px;
+        transition: scale 0.2ease;
+    }
+    
+    .back i:hover {
+        scale: 1.2;
+    }
+    
+    .back i:active {
+        scale: 0.8;
+    }
+
+}

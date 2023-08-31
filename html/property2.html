@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/detailsprop.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5de5eb5126.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <section class="listing">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../assets/white-logo.png" alt="">
+                </div>
+                <ul class="links">
+                    <li><a href="../html/Homepage.html" >Home</a></li>
+          <li><a href="../html/review.html">About us</a></li>
+          <li><a href="../html/gallery.html">Gallery</a></li>
+          <li><a href="../html/property_listing.html"class="active">Property</a></li>
+          <li><a href="../html/Agent.html">Agents</a></li>
+                </ul>
+                <a href="#" class="action_btn">Contact Us</a>
+                <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+
+            <div class="dropdown">
+                <li><a href="../html/Homepage.html" >Home</a></li>
+        <li><a href="../html/review.html">About us</a></li>
+        <li><a href="../html/gallery.html">Gallery</a></li>
+        <li><a href="../html/property_listing.html"class="active">Property</a></li>
+        <li><a href="../html/Agent.html">Agents</a></li>
+        <li><a href="../html/contact1.html" class="action_btn">Contact Us</a></li>
+            </div>
+        </header>
+    </section>
+        <section class="view-property">
+        
+        <div class="details">
+            <div class="swiper images-container">
+                <div class="swiper-wrapper">
+                   <img src="../assets/pro2.jpg" alt="" class="swiper-slide">
+                   
+                </div>
+               
+            </div>
+             <h3 class="name">Property 2</h3>
+             <p class="location"><i class="fas fa-map-marker-alt"></i><span>Location</span></p>
+             <div class="info">
+                <p><i class="fa fa-inr"></i><span>price</span></p>
+                <p><i class="fas fa-phone"></i><a href="tel:1234567890"><span></span></a></p>
+                <p><i class="fas fa-building"></i><span></span></p>
+                <p><i class="fas fa-calendar"></i><span>date</span></p>
+             </div>
+             <h3 class="title">Details</h3>
+             <div class="flex">
+                <div class="box">
+                   <p><i>rooms :</i><span>BHK</span></p>
+                   <p><i>deposit amount : </i><span><span class="fas fa-indian-rupee-sign" style="margin-right: .5rem;"></span></span></p>
+                   <p><i>status :</i><span></span></p>
+                   <p><i>bedroom :</i><span></span></p>
+                   <p><i>bathroom :</i><span></span></p>
+                   <p><i>balcony :</i><span></span></p>
+                </div>
+                <div class="box">
+                   <p><i>carpet area :</i><span>sqft</span></p>
+                   <p><i>age :</i><span> years</span></p>
+                   <p><i>total floors :</i><span></span></p>
+                   <p><i>room floor :</i><span></span></p>
+                   <p><i>furnished :</i><span></span></p>
+                   <p><i>loan :</i><span></span></p>
+                </div>
+             </div>
+             <h3 class="title">Amenities</h3>
+             <div class="flex">
+                <div class="box">
+                   <p><i class="fas fa-elevator" style="color: yellow;"></i><span>lifts</span></p>
+                   <p><i class="fas	fa-door-closed" style="color: yellow;"></i><span>security guards</span></p>
+                   <p><i class="fas fa-child" style="color: yellow;"></i><span>play ground</span></p>
+                   <p><i class="fas fa-tree" style="color: yellow;"></i><span>gardens</span></p>
+                   <p><i class="fas fa-water" style="color: yellow;"></i><span>water supply</span></p>
+                   <p><i class="fas fa-lightbulb" style="color: yellow;"></i><span>power backup</span></p>
+                </div>
+                <div class="box">
+                   <p><i class="fas fa-parking" style="color: yellow;"></i><span>parking area</span></p>
+                   <p><i class="fa-solid fa-dumbbell" style="color: yellow;"></i><span>gym</span></p>
+                   <p><i class="fas fa-shopping-bag" style="color: yellow;"></i><span>shopping mall</span></p>
+                   <p><i class="fas fa-hospital" style="color: yellow;"></i><span>hospital</span></p>
+                   <p><i class="fas fa-school" style="color: yellow;"></i><span>schools</span></p>
+                   <p><i class="fas fa-store" style="color: yellow;"></i><span>market area</span></p>
+                </div>
+             </div>
+             <h3 class="title">Description</h3>
+             <p class="description">description</p>
+             
+          </div>
+        </section>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdown = document.querySelector('.dropdown')
+      
+            toggleBtn.onclick = function () {
+              dropdown.classList.toggle('open')
+              const isOpen = dropdown.classList.contains('open')
+      
+              toggleBtnIcon.classList = isOpen
+              ?'fa-solid fa-xmark'
+              :'fa-solid fa-bars'
+            }
+
+            </script>
+   

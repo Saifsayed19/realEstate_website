@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/Agent.css" />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/5de5eb5126.js" crossorigin="anonymous"></script>
+
+    <title>Responsive</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../assets/white-logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="../html/Homepage.html" >Home</a></li>
+          <li><a href="../html/review.html">About us</a></li>
+          <li><a href="../html/gallery.html">Gallery</a></li>
+          <li><a href="../html/property_listing.html">Property</a></li>
+          <li><a href="../html/Agent.html" class="active">Agents</a></li>
+        </ul>
+        <a href="../html/contact1.html" class="action_btn">Contact Us</a>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <li><a href="../html/Homepage.html" >Home</a></li>
+        <li><a href="../html/review.html">About us</a></li>
+        <li><a href="../html/gallery.html">Gallery</a></li>
+        <li><a href="../html/property_listing.html">Property</a></li>
+        <li><a href="../html/Agent.html"class="active">Agents</a></li>
+        <li><a href="../html/contact1.html" class="action_btn">Contact Us</a></li>
+        </div>
+    </header>
+
+    <main>
+        <!-- Content -->
+        <div class="container">
+            <div class="box">
+                <div class="img">
+                    <img src="../assets/avatar.jpg" alt="img">
+                </div>
+                <h3>Arjun Varma</h3>
+                <a href="../html/agent1.html"><button>About Us
+                    </button></a>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="../assets/avatar.jpg" alt="img">
+                </div>
+                <h3>Manoj Sharma</h3>
+                <a href="../html/agent2.html"><button>About Us
+                    </button></a>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="../assets/avatar.jpg" alt="img">
+                </div>
+                <h3>Vinod Bhagat</h3>
+                <a href="../html/agent3.html"><button>About Us
+                    </button></a>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdown = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function () {
+            dropdown.classList.toggle('open')
+            const isOpen = dropdown.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>

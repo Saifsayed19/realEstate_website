@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="../css/contact.css" />
+  <script src="https://kit.fontawesome.com/9cd4668b4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar ">
+      <div class="logo"><a href="../assets/white-logo.png"><img src="../assets/white-logo.png" alt="Logo"></a></div>
+      <ul class="links">
+        <li><a href="../html/Homepage.html" >Home</a></li>
+        <li><a href="../html/review.html">About us</a></li>
+        <li><a href="../html/gallery.html">Gallery</a></li>
+        <li><a href="../html/property_listing.html">Property</a></li>
+        <li><a href="../html/Agent.html">Agents</a></li>
+      </ul>
+      <a href="../html/contact1.html" class="action_btn">Contact Us</a>
+      <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+
+    <div class="dropdown">
+      <li><a href="../html/Homepage.html" >Home</a></li>
+      <li><a href="../html/review.html">About us</a></li>
+      <li><a href="../html/gallery.html">Gallery</a></li>
+      <li><a href="../html/property_listing.html">Property</a></li>
+      <li><a href="../html/Agent.html">Agents</a></li>
+      <li><a href="../html/contact1.html" class="action_btn">Contact Us</a></li>
+    </div>
+  </header>
+
+  <div class="container Getintouch">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Get in touch with us! </h3>
+        <p class="text">
+          Have any question regarding property ?? You can contact us anytime!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <p> <i class="fa-solid fa-location-pin"></i> <span>
+            24, Vashi Navi-Mumbai Maharashtra </span> </p>
+          </div>
+
+          <div class="information">
+            <p> <i class="fa-sharp fa-regular fa-envelope"></i> <span>
+            grizlaproperty@gmail.com </span> </p> 
+          </div> 
+
+          <div class="information">
+            <p> <i class="fa-solid fa-phone"></i> <span>
+            1234567890 </span> </p> 
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>You can follow us here also :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/contac.js"></script>
+
+  <!-- <head>
+    <meta charset="UTF-8">
+    <title>Our Team Section</title>
+    <link rel="stylesheet" href="styles.css">
+  </head> -->
+  
+      <div class="wrapper">
+        <h1>
+          <centre>People's Opinion
+        </h1>
+        </centre><br></br>
+        <div class="team">
+          <div class="team_member">
+            <div class="team_img">
+              <img src="../assets/con1.jpg" alt="Team_image">
+            </div>
+            <h3>Tina Doe</h3>
+            <p class="role">UI developer</p>
+            <p> Great environment, professional and nice people, clean and beautiful office set up. They care about
+              their clients and train their agents frequently so they are always updated with what’s going on in the
+              market. I recommend (RN) to anyone looking to do any Real Estate transaction.</p>
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="../assets/con2.jpg" alt="Team_image">
+            </div>
+            <h3>Rosie Meg</h3>
+            <p class="role">Tester</p>
+            <p>I purchased a newly constructed condo so it wasn’t a straightforward deal. They told me that going in and
+              highlighted the concerns they had and the research they wanted to do to make sure progress was being made
+              and I wouldn’t have to wait for a long time to move in. </p>
+          </div>
+          <div class="team_member">
+            <div class="team_img">
+              <img src="../assets/con3.jpg" alt="Team_image">
+            </div>
+            <h3>Alex Wood</h3>
+            <p class="role">Support Lead</p>
+            <p>When we found our dream home, there was already one more offer on it and they were going to decide that
+              night as their associate agent helped convince them to wait until the next afternoon to make a decision,
+              so we could submit our offer. </p>
+          </div>
+        </div>
+      </div>
+
+       
+<script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdown = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function () {
+          dropdown.classList.toggle('open')
+          const isOpen = dropdown.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        
+      </script>
+
+    </body>
+</html>

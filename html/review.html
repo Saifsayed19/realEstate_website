@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: Poppins;
+            }
+            
+            li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: yellow;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links:hover,
+.navbar a.active{
+    color: yellow;
+    font-weight: 700;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: yellow;
+    color: #3c5bda;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    background-color:yellow;
+    color: #3c5bda;
+}
+
+.action_btn:active{
+    scale: 0.95;
+    background-color:#fff;
+    color: #3c5bda;
+}
+
+/* Dropdown */
+.dropdown{
+    display: none;
+    z-index:1;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height:0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown.open{
+    height:280px
+}
+
+.dropdown li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+            .....
+
+.wrapper{
+  margin-top: 10%;
+}
+.wrapper h1{
+  font-family: ';
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #000000;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+/* Responsive */
+
+@media(max-width: 1024px){
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+    }
+}
+
+@media(max-width: 768px){
+    .hero{
+        margin-top: 100px;
+    }
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+    .heading{
+        font-size: 50px;
+        padding: 50px 100px;
+    }
+    .form{
+        width: 250px;
+    }
+}
+@media(max-width: 425px){
+    .hero{
+        margin-top: 100px;
+    }
+    .dropdown{
+        left: 2rem;
+        width: unset;
+    }
+    .heading{
+        font-size: 50px;
+        padding: 50px 100px;
+    }
+    .form{
+        width: 250px;
+    }
+    
+    
+}
+  }
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+        </style>
+    
+
+   
+<body background="../assets/bgimg.jpg" ,style="background-no:repeat;background-size:100%100%">
+
+<header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../assets/white-logo.png" alt="">
+        </div>
+        <ul class="links">
+          <li><a href="../html/Homepage.html" >Home</a></li>
+          <li><a href="../html/review.html" class="active">About us</a></li>
+          <li><a href="../html/gallery.html">Gallery</a></li>
+          <li><a href="../html/property_listing.html">Property</a></li>
+          <li><a href="../html/Agent.html">Agents</a></li>
+        </ul>
+        <a href="../html/contact1.html" class="action_btn">Contact Us</a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+
+      <div class="dropdown">
+        <li><a href="../html/Homepage.html" >Home</a></li>
+        <li><a href="../html/review.html"class="active">About us</a></li>
+        <li><a href="../html/gallery.html">Gallery</a></li>
+        <li><a href="../html/property_listing.html">Property</a></li>
+        <li><a href="../html/Agent.html">Agents</a></li>
+        <li><a href="../html/contact1.html" class="action_btn">Contact Us</a></li>
+      </div>
+    </header>
+       
+       <img src="../assets/Social Native _ UGC Platform & Influencer Marketing for Ecommerce.jpeg" alt="Buildings" width="100%" height="300"><br></br>
+       <h1>ABOUT OUR COMPANY</h1><br></br>
+       <p style="color:white;">Welcome to our real estate company, where we are committed to helping you find your dream home or investment property.
+
+At our company, we believe that buying or selling a property should be a smooth and enjoyable experience. Our team of experienced real estate professionals is dedicated to providing you with personalized service, expert guidance, and a deep understanding of the local market.
+
+We offer a comprehensive range of real estate services, including buying and selling residential, commercial, and investment properties, property management, and market analysis. Our team has a keen eye for detail and is committed to ensuring that every transaction is completed efficiently and effectively.
+
+We pride ourselves on our ability to listen to our clients' needs and provide tailored solutions to meet their unique requirements. We understand that buying or selling a property can be stressful, which is why we strive to make the process as seamless as possible.
+
+Whether you are a first-time homebuyer, a seasoned investor, or looking to sell your property, we are here to help. Contact us today to schedule a consultation and take the first step towards achieving your real estate goals.
+
+Regenerate response</p><br></br>
+       <div></div>
+       <style>
+       h1 {text-align: center;}
+       p {text-align: center;}
+       div {text-align: center;}
+       </style>
+       .....
+      <div class="wrapper">
+  <h1>WHAT PEOPLE SAYS</h1><br></br>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="../assets/OIP (4).jpeg" alt="Team_image">
+      </div>
+      <h3>Sahil</h3>
+      <p class="role">Customer</p>
+      <p>I recently purchased a house through this real estate company and had an excellent experience. From the very beginning, the team was professional, knowledgeable, and attentive to my needs. They listened to what I was looking for in a home and helped me find the perfect property.</p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="../assets/Headshot-Photoggrapher-Clapham.webp" alt="Team_image">
+      </div>
+      <h3>Yash</h3>
+      <p class="role">Customer</p>
+      <p>I recently purchased a shop through this real estate company and had a fantastic experience. The team was incredibly knowledgeable about the local commercial property market, and they were able to help me find a property that met all of my requirements.
+
+From the initial consultation to the closing, they were responsive and communicative, providing me with regular updates throughout the transaction.</p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="../assets/download (1).jpeg">
+      </div>
+      <h3>Amaan</h3>
+      <p class="role">Customer</p>
+      <p>I recently purchased a plot of land through this real estate company and had a wonderful experience. The team was incredibly knowledgeable about the local land market, and they were able to help me find a property that met all of my requirements.
+
+From the very beginning, they were responsive and communicative, providing me with regular updates throughout the transaction.</p>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="../html/review.html">about us</a></li>
+  	 				<li><a href="../html/property_listing.html">our services</a></li>
+  	 				<li><a href="../html/privacy.html">privacy policy</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="../html/faq.html">FAQ</a></li>
+  	 				<li><a href="../html/property1.html">plots</a></li>
+  	 				<li><a href="../html/property2.html">Building</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Property Type</h4>
+  	 			<ul>
+  	 				<li><a href="../html/property_listing.html">New Appartment</a></li>
+  	 				<li><a href="../html/property_listing.html">Mansion</a></li>
+  	 				<li><a href="../html/property_listing.html">New Complex</a></li>
+  	 				<li><a href="../html/property_listing.html">Land</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+<script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropdown = document.querySelector('.dropdown')
+
+      toggleBtn.onclick = function () {
+        dropdown.classList.toggle('open')
+        const isOpen = dropdown.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+      }
+    </script>
+
+	
+
+    </body>
+
+</html>
